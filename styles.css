@@ -55,6 +55,7 @@ body {
     border-radius: 5px;
     font-size: 1em;
     transition: all .5s ease 0s;
+    color: black; 
 }
 
 .btn:hover {
