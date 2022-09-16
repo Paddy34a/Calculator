@@ -55,6 +55,7 @@ html {
     padding: .75em; 
     border-radius: 5px;
     font-size: 1em;
+    color: black; 
     transition: all .5s ease 0s;
 }
 
