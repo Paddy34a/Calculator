@@ -11,8 +11,8 @@
 
 html {
     background-image: linear-gradient(to top, rgb(226, 68, 200), rgb(127, 82, 255));
-    background-size: 200% 200%;
-    animation: bg-color-fade 15s infinite alternate; 
+    /*background-size: 200% 200%;
+    animation: bg-color-fade 15s infinite alternate;*/ 
 }
 
 .container {
