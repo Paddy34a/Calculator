@@ -7,7 +7,7 @@ mittelwertSubmitButton.addEventListener("click", (e) => {
         if(value !== "") {
             createElement(true, value); 
         } else {
-            createElement(false, "The input must not be an empty!"); 
+            createElement(false, "The input must not be empty!"); 
         }
     } else {
         createElement(false, "The text input field is somehow no HTML Input Element???"); 
