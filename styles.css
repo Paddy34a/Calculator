@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+/* general setup */
+
+* {
+    box-sizing: border-box;
+    padding: 0; 
+    margin: 0; 
+    font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif; 
+}
+
+html {
+    background-image: linear-gradient(to top, rgb(226, 68, 200), rgb(127, 82, 255));
+    background-attachment: fixed;
+    /*background-size: 200% 200%;
+    animation: bg-color-fade 15s infinite alternate;*/ 
+}
+
+.container {
+    width: 100%;
+    height: 100vh; 
+}
+
+.title-div {
+    text-align: center;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+.title a {
+    animation: glow .5s ease infinite alternate;
+    font-size: 4em; 
+    text-align: center;
+    text-decoration: none;
+    color: black; 
+}
+
+.nav {
+    padding: 1.5em; 
+    border-bottom: 5px ridge black;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav ul li {
+    list-style: none;
+}
+
+.btn {
+    text-decoration: none;
+    border: none;
+    background-color: aqua;
+    padding: .75em; 
+    border-radius: 5px;
+    font-size: 1em;
+    color: black; 
+    transition: all .5s ease 0s;
+}
+
+.btn:hover {
+    border-radius: 25px;
+    background-color: rgb(0, 225, 255);
+}
+
+.content {
+    margin: 2em; 
+    font-size: 1.5em;
+}
+
+.instructions {
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+/* setup of page mittelwert.html */ 
+
+.mittelwert {
+    display: flex;
+    justify-content: center;
+}
+
+.mittelwert-input {
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: .7em; 
+    margin-left: .5em;
+    margin-right: .5em;
+    text-align: center;
+}
+
+.mittelwert-submit {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.mittelwert-submit button {
+    margin: 1em; 
+}
+
+.mittelwert-autoresponse {
+    text-align: center;
+    margin-top: 2em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+/* setup of page standardabweichung.html */
+
+.standardabweichung {
+    display: flex;
+    justify-content: center;
+}
+
+.standardabweichung-input {
+    width: 80%;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: .7em; 
+    margin-left: .5em;
+    margin-right: .5em;
+    text-align: center;
+}
+
+.standardabweichung-submit {
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.standardabweichung-submit button {
+    margin: 1em;
+}
+
+.standardabweichung-autoresponse {
+    text-align: center;
+    margin-top: 2em;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5em;
+}
+
+/* animations section */
+
+@keyframes glow {
+
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff, 0 0 30px #fff, 0 0 35px #fff;
+    }
+    
+    to {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff; 
+    }
+}
+
+
+@keyframes bg-color-fade {
+
+    from {
+        background-position: top;
+    }
+
+    to {
+        background-position: bottom;
+    }
+
+}
