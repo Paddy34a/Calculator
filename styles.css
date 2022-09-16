@@ -9,9 +9,10 @@
     font-family: "Raleway", Verdana, Geneva, Tahoma, sans-serif; 
 }
 
-body {
-    background: linear-gradient(to bottom, rgb(226, 68, 142), rgb(127, 82, 255));
-    background-attachment: fixed;
+html {
+    background-image: linear-gradient(to top, rgb(226, 68, 200), rgb(127, 82, 255));
+    background-size: 200% 200%;
+    animation: bg-color-fade 15s infinite alternate; 
 }
 
 .container {
@@ -55,7 +56,6 @@ body {
     border-radius: 5px;
     font-size: 1em;
     transition: all .5s ease 0s;
-    color: black; 
 }
 
 .btn:hover {
@@ -151,4 +151,17 @@ body {
     to {
         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff; 
     }
+}
+
+
+@keyframes bg-color-fade {
+
+    from {
+        background-position: top;
+    }
+
+    to {
+        background-position: bottom;
+    }
+
 }
