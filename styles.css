@@ -28,7 +28,7 @@ html {
 }
 
 .title a {
-    animation: glow .5s ease infinite alternate;
+    animation: glow 1s ease infinite alternate;
     font-size: 4em; 
     text-align: center;
     text-decoration: none;
