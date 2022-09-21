@@ -63,14 +63,16 @@ const createElement = async (valid, content) => {
                 
                 for(const e of splitted) {
                     if(isNaN(e)) {
-                        return p.textContent = `The entry "${e}" is not a number!`;
+                        p.textContent = `The entry "${e}" is not a number!`;
+                        return document.querySelector(".content").append(p); 
                     }
                 }
 
                 const result = calculateStandardabweichung(splitted); 
 
                 if(isNaN(result)) {
-                    return p.textContent = "An error occured whilst trying to calculate the result!"; 
+                    p.textContent = "An error occured whilst trying to calculate the result!";
+                    return document.querySelector(".content").append(p); 
                 }
 
                 p.textContent = result; 
